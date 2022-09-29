@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sword attack.mp3-25a555d335cf5a47ebb1192af0584960.mp3str"
+
+[deps]
+
+source_file="res://audio/sword attack.mp3"
+dest_files=[ "res://.import/sword attack.mp3-25a555d335cf5a47ebb1192af0584960.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

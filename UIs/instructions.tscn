@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/fonts/old.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/fonts/keyboard.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UIs/instructions.gd" type="Script" id=3]
+[ext_resource path="res://assets/menu/back.png" type="Texture" id=4]
+[ext_resource path="res://audio/startingscreen.mp3" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 66
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 37
+font_data = ExtResource( 2 )
+
+[node name="instructions" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="instructions" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_left = 343.0
+margin_right = -322.0
+margin_bottom = 86.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "Instructions"
+
+[node name="1" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_left = 255.0
+margin_top = 117.0
+margin_right = -513.0
+margin_bottom = 484.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Move Left
+
+Move Right
+
+Jump
+
+Melee
+
+Skip Dialogue"
+
+[node name="2" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_left = 553.0
+margin_top = 117.0
+margin_right = -437.0
+margin_bottom = 484.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "-
+
+-
+
+-
+
+-
+
+-"
+
+[node name="3" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_left = 684.0
+margin_top = 117.0
+margin_right = -208.0
+margin_bottom = 474.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "A
+
+D
+
+W
+
+Space
+
+E"
+
+[node name="back" type="TextureButton" parent="."]
+margin_left = 465.0
+margin_top = 502.0
+margin_right = 540.0
+margin_bottom = 577.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="background" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

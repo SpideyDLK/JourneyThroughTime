@@ -1,0 +1,90 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/fonts/score.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://UIs/GameOverScreen.gd" type="Script" id=3]
+[ext_resource path="res://assets/fonts/80's.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/fonts/old.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/menu/red x.png" type="Texture" id=6]
+[ext_resource path="res://assets/menu/x.png" type="Texture" id=7]
+[ext_resource path="res://assets/menu/restart.png" type="Texture" id=8]
+[ext_resource path="res://assets/menu/restart hover.png" type="Texture" id=9]
+[ext_resource path="res://audio/gameover.mp3" type="AudioStream" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 113
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 46
+font_data = ExtResource( 5 )
+
+[node name="GameOverScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 769, 139 )
+script = ExtResource( 3 )
+
+[node name="score" type="RichTextLabel" parent="."]
+margin_left = 426.0
+margin_top = 333.0
+margin_right = 948.0
+margin_bottom = 572.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "SCORE"
+
+[node name="amount" type="Label" parent="score"]
+margin_left = 143.0
+margin_top = 1.0
+margin_right = 553.0
+margin_bottom = 161.0
+custom_fonts/font = SubResource( 5 )
+text = "0"
+
+[node name="through" type="RichTextLabel" parent="."]
+margin_left = 330.0
+margin_top = 135.0
+margin_right = 694.0
+margin_bottom = 301.0
+rect_pivot_offset = Vector2( -182, 49 )
+custom_fonts/normal_font = SubResource( 3 )
+text = "Game Over"
+
+[node name="journey" type="RichTextLabel" parent="."]
+margin_left = 419.0
+margin_top = 251.0
+margin_right = 605.0
+margin_bottom = 312.0
+custom_fonts/normal_font = SubResource( 4 )
+text = "You Died"
+
+[node name="restart" type="TextureButton" parent="."]
+margin_left = 492.0
+margin_top = 405.0
+margin_right = 532.0
+margin_bottom = 445.0
+texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+expand = true
+
+[node name="quit" type="TextureButton" parent="."]
+margin_left = 492.0
+margin_top = 472.0
+margin_right = 532.0
+margin_bottom = 512.0
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 6 )
+expand = true
+
+[node name="gameoverMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

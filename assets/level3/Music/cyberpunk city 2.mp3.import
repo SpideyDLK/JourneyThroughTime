@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cyberpunk city 2.mp3-9156b5ece1edc8ab371cfebad9df95a6.mp3str"
+
+[deps]
+
+source_file="res://assets/level3/Music/cyberpunk city 2.mp3"
+dest_files=[ "res://.import/cyberpunk city 2.mp3-9156b5ece1edc8ab371cfebad9df95a6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

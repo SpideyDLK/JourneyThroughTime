@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cemetary.mp3-675f984a84a9384af35a6949bf16aea6.mp3str"
+
+[deps]
+
+source_file="res://audio/cemetary.mp3"
+dest_files=[ "res://.import/cemetary.mp3-675f984a84a9384af35a6949bf16aea6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

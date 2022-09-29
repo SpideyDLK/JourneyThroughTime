@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cashCollect.mp3-3f366c1f373538952cd38c4f9af7347c.mp3str"
+
+[deps]
+
+source_file="res://audio/cashCollect.mp3"
+dest_files=[ "res://.import/cashCollect.mp3-3f366c1f373538952cd38c4f9af7347c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

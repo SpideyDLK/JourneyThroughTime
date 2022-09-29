@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/snore.mp3-5b7e66c5e947237624fcd35571ac48f1.mp3str"
+
+[deps]
+
+source_file="res://audio/snore.mp3"
+dest_files=[ "res://.import/snore.mp3-5b7e66c5e947237624fcd35571ac48f1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0.0

@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/level3/Sprites/egg turret/Idle/idle1.png" type="Texture" id=1]
+[ext_resource path="res://assets/level3/Sprites/egg turret/Shoot/shoot3.png" type="Texture" id=2]
+[ext_resource path="res://assets/level3/Sprites/egg turret/Idle/idle2.png" type="Texture" id=3]
+[ext_resource path="res://assets/level3/Sprites/egg turret/Shoot/shoot1.png" type="Texture" id=4]
+[ext_resource path="res://assets/level3/Sprites/egg turret/Shoot/shoot4.png" type="Texture" id=5]
+[ext_resource path="res://assets/level3/Sprites/egg turret/Shoot/shoot2.png" type="Texture" id=6]
+[ext_resource path="res://characters/eggTurret.gd" type="Script" id=7]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 19.0
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+} ]
+
+[node name="eggTurret" type="StaticBody2D"]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, 4 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "shoot"
+playing = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -16, 2 )

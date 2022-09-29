@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dreaming.mp3-5858050f85eedd0110c6ff740836f6be.mp3str"
+
+[deps]
+
+source_file="res://audio/dreaming.mp3"
+dest_files=[ "res://.import/dreaming.mp3-5858050f85eedd0110c6ff740836f6be.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/panel_Example2.png" type="Texture" id=1]
+[ext_resource path="res://objects/dialogBox.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/old.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 14
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 13
+font_data = ExtResource( 3 )
+
+[node name="dialogBox" type="CanvasLayer"]
+script = ExtResource( 2 )
+dialogue_file = "res://dialogues/intro.json"
+
+[node name="dialogBox" type="NinePatchRect" parent="."]
+margin_left = 315.0
+margin_top = 140.0
+margin_right = 647.0
+margin_bottom = 242.0
+rect_scale = Vector2( 1.41869, 1.41869 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 27.163, 25.3554, 396.837, 99.5114 )
+patch_margin_left = 6
+patch_margin_top = 27
+patch_margin_bottom = 27
+
+[node name="name" type="RichTextLabel" parent="dialogBox"]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 299.0
+margin_bottom = 34.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "Name"
+
+[node name="message" type="RichTextLabel" parent="dialogBox"]
+margin_left = 16.0
+margin_top = 38.0
+margin_right = 318.0
+margin_bottom = 90.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "Name"

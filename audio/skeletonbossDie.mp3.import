@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/skeletonbossDie.mp3-1547d9d4a55e8a0aea87326f7300ae5f.mp3str"
+
+[deps]
+
+source_file="res://audio/skeletonbossDie.mp3"
+dest_files=[ "res://.import/skeletonbossDie.mp3-1547d9d4a55e8a0aea87326f7300ae5f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

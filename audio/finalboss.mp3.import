@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/finalboss.mp3-b464c752c8f936c7791b125e127d528c.mp3str"
+
+[deps]
+
+source_file="res://audio/finalboss.mp3"
+dest_files=[ "res://.import/finalboss.mp3-b464c752c8f936c7791b125e127d528c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

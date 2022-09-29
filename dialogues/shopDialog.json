@@ -1,0 +1,9 @@
+[
+    {"name": "Goblin", "message":"Hello there adventurer."},
+    {"name": "Player", "message":"Oh! Hello Mr. Goblin"},
+    {"name": "Goblin", "message":"Not going into the woods alone are we?"},
+    {"name": "Player", "message":"..."},
+    {"name": "Goblin", "message":"You are, aren't you? Well, be careful in there..."},
+    {"name": "Player", "message":"I will, Thank you"},
+    {"name": "Goblin", "message":"Oh! and watch out for that pit... Hehe..."}
+]
