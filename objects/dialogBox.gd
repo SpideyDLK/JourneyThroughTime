@@ -49,6 +49,8 @@ func next_line():
 	
 func load_dialogue():
 	var file = File.new()
+	print(dialogue_file)
+	print(file.file_exists(dialogue_file))
 	if file.file_exists(dialogue_file):
 		file.open(dialogue_file,file.READ)
 		return parse_json(file.get_as_text())

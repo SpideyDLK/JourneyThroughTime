@@ -29,7 +29,7 @@ func _ready():
 		yield(get_tree().create_timer(8),"timeout")
 		$dreamingSound.playing = false
 		var dialogBox = get_node_or_null("dialogBox")
-		
+		dialogBox.dialogue_file = "res://dialogues/intro.json"
 		if dialogBox:
 			dialogBox.play()
 			dialogBox.visible = true
